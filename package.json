@@ -9,13 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.5"
   },
   "keywords": [],
   "description": "��#\u0000 \u0000N\u0000o\u0000d\u0000e\u0000-\u0000M\u0000o\u0000n\u0000g\u0000o\u0000\r\u0000 \u0000",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DersimAbbas/Node-Mongo.git"

@@ -1,18 +1,20 @@
+
+require("dotenv").config();
 const express = require('express')
 const app = express()
 const port = 3000
 const mongoose = require("mongoose");
 
 mongoose.
-connect("mongodb+srv://dersimcloud24:Delo12321@node-api-mongodb.eozli.mongodb.net/Products-API?retryWrites=true&w=majority&appName=node-api-mongodb")
+connect(process.env.MONGO_URI)
 .then(() => {
   console.log("connected to mongodb");
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })
   
-
 })
+
 
 app.get('/', (req, res) => { 
   res.send('mongoAPI')
